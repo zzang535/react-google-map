@@ -3,7 +3,13 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { useEffect, useRef } from 'react';
 export var GoogleMap = function (_a) {
-    var apiKey = _a.apiKey, center = _a.center, _b = _a.zoom, zoom = _b === void 0 ? 10 : _b, _c = _a.markers, markers = _c === void 0 ? [] : _c, _d = _a.mapId, mapId = _d === void 0 ? '' : _d;
+    var apiKey = _a.apiKey, _b = _a.center, center = _b === void 0 ? {
+        lat: 37.350246,
+        lng: 126.925494,
+    } : _b, _c = _a.zoom, zoom = _c === void 0 ? 10 : _c, _d = _a.markers, markers = _d === void 0 ? [{
+            lat: 37.350246,
+            lng: 126.925494,
+        }] : _d, _e = _a.mapId, mapId = _e === void 0 ? 'default-map-id' : _e;
     var mapRef = useRef(null);
     var mapInstance = useRef(null);
     useEffect(function () {
@@ -40,6 +46,6 @@ export var GoogleMap = function (_a) {
     };
     return (_jsx("div", { ref: mapRef, style: {
             width: '100%',
-            height: '500px',
+            height: '100%',
         } }));
 };
