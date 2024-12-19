@@ -1,13 +1,16 @@
 {
   "name": "@zzang535/react-google-map",
   "description": "React google map rendering component",
-  "keywords": ["react", "component", "google", "map"],
+  "keywords": [
+    "react",
+    "component",
+    "google",
+    "map"
+  ],
   "version": "0.0.2",
   "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@types/google.maps": "^3.58.1",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
@@ -45,5 +48,7 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "browser": "./browser/specific/main.js"
+  "browser": "./browser/specific/main.js",
+  "author": "Hwang Yoon <zzang535@gmail.com>",
+  "license": "MIT"
 }

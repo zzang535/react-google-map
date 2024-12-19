@@ -1,2 +1,2 @@
-declare function GoogleMap(): import("react/jsx-runtime").JSX.Element;
-export default GoogleMap;
+export { default as GoogleMap } from './GoogleMap';
+export type { GoogleMapProps } from './GoogleMap';
