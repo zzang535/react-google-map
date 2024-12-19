@@ -11,7 +11,7 @@ export type GoogleMapProps = {
     mapId?: string; // Google Map ID (옵션)
 };
 
-const GoogleMap: React.FC<GoogleMapProps> = ({
+export const GoogleMap: React.FC<GoogleMapProps> = ({
     apiKey,
     center,
     zoom = 10,
@@ -67,5 +67,3 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
         />
     );
 };
-
-export default GoogleMap;
