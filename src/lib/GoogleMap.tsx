@@ -13,10 +13,16 @@ export type GoogleMapProps = {
 
 export const GoogleMap: React.FC<GoogleMapProps> = ({
     apiKey,
-    center,
+    center = {
+        lat: 37.350246,
+        lng: 126.925494,
+    },
     zoom = 10,
-    markers = [],
-    mapId = '',
+    markers = [{
+        lat: 37.350246,
+        lng: 126.925494,
+    }],
+    mapId = 'default-map-id',
 }) => {
     const mapRef = useRef<HTMLDivElement>(null);
     const mapInstance = useRef<google.maps.Map | null>(null);
@@ -62,7 +68,7 @@ export const GoogleMap: React.FC<GoogleMapProps> = ({
             ref={mapRef}
             style={{
                 width: '100%',
-                height: '500px',
+                height: '100%',
             }}
         />
     );

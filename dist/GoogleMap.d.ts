@@ -13,5 +13,4 @@ export type GoogleMapProps = {
     }[];
     mapId?: string;
 };
-declare const GoogleMap: React.FC<GoogleMapProps>;
-export default GoogleMap;
+export declare const GoogleMap: React.FC<GoogleMapProps>;

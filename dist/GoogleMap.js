@@ -2,7 +2,7 @@
 'use client'; // Next.js에서 클라이언트 사이드 실행
 import { jsx as _jsx } from "react/jsx-runtime";
 import { useEffect, useRef } from 'react';
-var GoogleMap = function (_a) {
+export var GoogleMap = function (_a) {
     var apiKey = _a.apiKey, center = _a.center, _b = _a.zoom, zoom = _b === void 0 ? 10 : _b, _c = _a.markers, markers = _c === void 0 ? [] : _c, _d = _a.mapId, mapId = _d === void 0 ? '' : _d;
     var mapRef = useRef(null);
     var mapInstance = useRef(null);
@@ -43,4 +43,3 @@ var GoogleMap = function (_a) {
             height: '500px',
         } }));
 };
-export default GoogleMap;
