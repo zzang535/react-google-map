@@ -28,7 +28,7 @@ import { GoogleMap } from '@zzang535/react-google-map';
 
 export default function App() {
   return (
-    <div style={{ width: '100%', height: '500px' }}>
+    <div style={{ width: "100vw", height: "100vh" }}>
       <GoogleMap
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY || ''}
         center={{ lat: 37.350246, lng: 126.925494 }}
@@ -43,4 +43,3 @@ export default function App() {
   );
 }
 ```
-

@@ -1,2 +1,7 @@
-export { GoogleMap } from './GoogleMap';
-export type { GoogleMapProps } from './GoogleMap';
+// import
+import { GoogleMap } from "./GoogleMap";
+import { GoogleMapProps } from "./types";
+
+// export
+export { GoogleMap };
+export type { GoogleMapProps };

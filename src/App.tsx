@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { GoogleMap } from "./lib/GoogleMap";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>REACT-GOOGLE-MAP</h1>
+      <div style={{ width: "100vw", height: "100vh" }}>
+        <GoogleMap
+          apiKey={process.env.REACT_APP_GOOGLE_MAP_API_KEY || ""}
+          center={{ lat: 37.350246, lng: 126.925494 }}
+          zoom={10}
+          markers={[
+            { lat: 37.350246, lng: 126.925494, title: "Marker 1" },
+            { lat: 37.360246, lng: 126.935494, title: "Marker 2" },
+          ]}
+          mapId="your-map-id"
+        />
+      </div>
     </div>
   );
 }
