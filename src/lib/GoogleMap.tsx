@@ -1,10 +1,10 @@
 // GoogleMap.tsx
 "use client"; // Next.js에서 클라이언트 사이드 실행
 
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { GoogleMapProps } from "./types";
 
-export const GoogleMap: React.FC<GoogleMapProps> = ({
+export function GoogleMap({
   apiKey,
   center = {
     lat: 37.350246,
@@ -18,7 +18,7 @@ export const GoogleMap: React.FC<GoogleMapProps> = ({
     },
   ],
   mapId = "default-map-id",
-}) => {
+}: GoogleMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<google.maps.Map | null>(null);
 
@@ -67,4 +67,4 @@ export const GoogleMap: React.FC<GoogleMapProps> = ({
       }}
     />
   );
-};
+}
