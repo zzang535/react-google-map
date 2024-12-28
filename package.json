@@ -1,5 +1,6 @@
 {
   "name": "@zzang535/react-google-map",
+  "version": "0.0.8",
   "description": "React google map rendering component",
   "keywords": [
     "react",
@@ -7,8 +8,12 @@
     "google",
     "map"
   ],
-  "version": "0.0.8",
+  "author": "Hwang Yoon <zzang535@gmail.com>",
+  "license": "MIT",
   "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
   "dependencies": {
     "@types/google.maps": "^3.58.1",
     "@types/jest": "^27.0.1",
@@ -45,10 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "browser": "./browser/specific/main.js",
-  "author": "Hwang Yoon <zzang535@gmail.com>",
-  "license": "MIT"
+  }
 }
